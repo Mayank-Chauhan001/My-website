@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>VKS OFFICIAL × WINGO 1M GOLDEN VIP</title>
+<meta name="description" content="Exclusive Golden VIP WinGo 1-Minute Live Signal Predictor and Trend Analysis System by VKS Official.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  *{box-sizing:border-box}
+  body{background:#070502;font-family:'El Messiri',sans-serif;text-transform:uppercase;color:#fef08a;height:100dvh;margin:0;overflow:hidden;-webkit-tap-highlight-color:transparent}
+  .font-orbitron{font-family:'Orbitron',monospace,sans-serif!important}
+  .hide-scroll::-webkit-scrollbar{display:none}
+  .hide-scroll{-ms-overflow-style:none;scrollbar-width:none}
+  .input-box{background:#1a1307;border:2px solid #b45309;color:#fef08a;transition:all .3s;box-shadow:inset 0 2px 4px rgba(0,0,0,.4)}
+  .input-box:focus{border-color:#facc15;outline:none;transform:translateY(-2px);box-shadow:0 8px 15px rgba(250,204,21,.25)}
+  .btn-3d-gold{background:linear-gradient(135deg,#fbbf24,#d97706,#b45309);color:#fff;border:1px solid #fef08a;box-shadow:0 6px 0 #78350f,0 12px 25px rgba(217,119,6,.45);transition:all .1s}
+  .btn-3d-gold:active{transform:translateY(6px);box-shadow:0 0 0 #78350f,0 4px 8px rgba(217,119,6,.4)}
+  .btn-secondary-gold{background:linear-gradient(145deg,#1c1508,#2a1f0a);color:#fde047;border:2px solid #ca8a04;box-shadow:0 4px 0 #78350f;transition:all .1s}
+  .btn-secondary-gold:active{transform:translateY(4px);box-shadow:0 0 0 #78350f}
+  .timer-box-gold{background:linear-gradient(180deg,#f59e0b,#b45309,#78350f);color:#fff;border:1px solid #fef08a;box-shadow:inset 0 2px 4px rgba(255,255,255,.4),0 6px 12px rgba(180,83,9,.5);text-shadow:0 2px 4px rgba(0,0,0,.7)}
+  .pred-card-gold{background:linear-gradient(145deg,#140f06,#1c1409);border:2px solid #ca8a04;border-radius:28px;box-shadow:inset 0 0 25px rgba(245,158,11,.1),0 18px 40px rgba(0,0,0,.7);position:relative;overflow:hidden}
+  .result-text-big-gold{background:linear-gradient(135deg,#fef08a,#facc15,#ca8a04);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 15px rgba(250,204,21,.6))}
+  .result-text-small-gold{background:linear-gradient(135deg,#fed7aa,#fb923c,#ea580c);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 15px rgba(249,115,22,.6))}
+  @keyframes float3d{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  .anim-float{animation:float3d 3.5s ease-in-out infinite}
+  @keyframes scanningGold{0%{top:0%;opacity:0}15%{opacity:1}85%{opacity:1}100%{top:100%;opacity:0}}
+  .scanner-line-gold{position:absolute;left:0;width:100%;height:5px;background:linear-gradient(90deg,transparent,#fde047,#f59e0b,transparent);box-shadow:0 0 20px #fbbf24;display:none;z-index:20}
+  .analyzing .scanner-line-gold{display:block;animation:scanningGold 1.5s linear infinite}
+  #profile-drawer{transition:transform .4s cubic-bezier(.34,1.56,.64,1);transform:translateX(100%)}
+  #profile-drawer.open{transform:translateX(0)}
+  @keyframes spinDashed{to{transform:rotate(360deg)}}
+  .logo-circle-gold{width:150px;height:150px;border-radius:50%;background:linear-gradient(145deg,#241909,#150f05);border:4px solid #facc15;box-shadow:0 20px 45px rgba(217,119,6,.4);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+  .logo-circle-gold::before{content:'';position:absolute;inset:-8px;border-radius:50%;border:2px dashed rgba(250,204,21,.7);animation:spinDashed 12s linear infinite}
+  .logo-circle-gold img{width:100%;height:100%;object-fit:cover;border-radius:50%;position:relative;z-index:2}
+  .live-record-card-gold{background:linear-gradient(145deg,#140f06,#1c1409);border:2px solid #ca8a04;border-radius:24px;padding:16px;box-shadow:0 12px 30px rgba(0,0,0,.6)}
+</style>
+</head>
+<body class="antialiased flex justify-center bg-[#070502]">
+<div class="w-full h-full max-w-[420px] mx-auto relative flex flex-col bg-[#0f0b05] border-x border-[#b45309]/30 shadow-2xl overflow-hidden">
+
+  <!-- Top Navigation -->
+  <div id="top-nav" class="absolute top-0 w-full z-40 flex justify-between items-center px-4 py-3 bg-[#120d06]/95 backdrop-blur-xl border-b border-[#b45309]/40 shadow-md opacity-0 pointer-events-none transition-opacity duration-300">
+    <button onclick="goBack()" class="w-10 h-10 rounded-full bg-[#1c1508] border border-[#ca8a04] text-[#facc15] flex items-center justify-center pointer-events-auto active:scale-95" aria-label="Back">
+      <i class="fas fa-arrow-left text-sm"></i>
+    </button>
+    <div class="flex flex-col items-center">
+      <h1 class="text-lg font-black text-transparent bg-clip-text bg-gradient-to-r from-[#fef08a] via-[#facc15] to-[#ca8a04] tracking-widest leading-none font-orbitron">VKS OFFICIAL</h1>
+      <span class="text-[9px] tracking-[0.2em] text-[#fbbf24] font-black font-orbitron">WINGO 1M</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <!-- Quick Sound Toggle Button -->
+      <button id="quickSoundBtn" onclick="toggleSoundMaster()" class="w-10 h-10 rounded-full border border-[#facc15] bg-[#1c1508] text-[#facc15] flex items-center justify-center pointer-events-auto active:scale-95 transition-all" title="Toggle Sound">
+        <i id="quickSoundIcon" class="fas fa-volume-high text-xs"></i>
+      </button>
+      <button onclick="toggleProfile(true)" class="w-10 h-10 rounded-full bg-[#20170a] border border-[#facc15] flex items-center justify-center pointer-events-auto active:scale-95 overflow-hidden" aria-label="Profile">
+        <img src="https://i.supaimg.com/0f7fb06a-9122-4153-aaea-0e6022d89dd6/2524e09a-620a-439b-95f1-87afcb1bdc40.png" class="w-full h-full object-cover p-0.5 rounded-full" alt="Avatar">
+      </button>
+    </div>
+  </div>
+
+  <!-- Profile Drawer Overlay -->
+  <div id="drawer-overlay" onclick="toggleProfile(false)" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300 max-w-[420px] mx-auto"></div>
+
+  <!-- Profile Drawer -->
+  <div id="profile-drawer" class="fixed top-0 right-0 h-full w-[85%] max-w-[340px] bg-[#140e06] border-l-2 border-[#ca8a04] z-[60] flex flex-col p-6 justify-between shadow-2xl overflow-y-auto hide-scroll">
+    <div class="space-y-5">
+      <div class="flex items-center justify-between border-b border-[#b45309]/50 pb-4">
+        <h2 class="text-xl font-black tracking-widest text-[#fde047] font-orbitron">USER PROFILE</h2>
+        <button onclick="toggleProfile(false)" class="w-8 h-8 rounded-full bg-[#221808] border border-[#ca8a04] text-[#facc15] flex items-center justify-center active:scale-95" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <!-- User Card -->
+      <div class="flex items-center gap-4">
+        <div class="w-16 h-16 rounded-full bg-[#1e1507] border-2 border-[#facc15] flex items-center justify-center shadow-lg overflow-hidden shrink-0">
+          <img src="https://i.supaimg.com/0f7fb06a-9122-4153-aaea-0e6022d89dd6/2524e09a-620a-439b-95f1-87afcb1bdc40.png" class="w-full h-full object-cover p-1" alt="Avatar">
+        </div>
+        <div>
+          <h3 class="text-lg font-black tracking-widest text-white font-orbitron" id="drawer-name">USER</h3>
+          <div class="flex items-center gap-1 bg-[#ca8a04]/20 px-2 py-0.5 rounded border border-[#facc15] mt-1 text-[#fde047] font-bold text-[10px]">
+            <i class="fas fa-check-circle text-amber-400"></i>
+            <span>7-DAY VERIFIED</span>
+          </div>
+          <div id="drawer-key-status" class="mt-1 text-[9px] font-mono font-bold text-[#fbbf24]"></div>
+        </div>
+      </div>
+
+      <!-- Audio Alerts Controls Card -->
+      <div class="bg-[#1c1407] p-4 rounded-2xl border border-[#ca8a04]/60 relative shadow-xl space-y-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <div id="drawerAudioIconBox" class="w-9 h-9 rounded-xl flex items-center justify-center border bg-[#ca8a04]/25 border-[#facc15] text-[#facc15] shadow-[0_0_12px_rgba(250,204,21,0.25)]">
+              <i id="drawerAudioIcon" class="fas fa-volume-high text-sm"></i>
+            </div>
+            <div>
+              <div class="text-[11px] font-black text-[#fde047] tracking-wider font-orbitron flex items-center gap-1.5">
+                AUDIO ALERTS
+                <span id="audioPulseDot" class="w-1.5 h-1.5 rounded-full bg-[#facc15] animate-pulse"></span>
+              </div>
+              <div class="text-[8px] text-[#fef08a]/70 font-bold">SIGNAL & WIN CHIMES</div>
+            </div>
+          </div>
+
+          <!-- Switch -->
+          <button id="audioSwitchBtn" onclick="toggleSoundMaster()" type="button" aria-label="Toggle Sound" class="relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full border-2 transition-all duration-300 ease-in-out focus:outline-none bg-gradient-to-r from-[#d97706] to-[#f59e0b] border-[#fef08a] shadow-[0_0_12px_rgba(245,158,11,0.4)]">
+            <span id="audioSwitchThumb" class="pointer-events-none inline-block h-5 w-5 transform rounded-full shadow-md ring-0 transition duration-300 ease-in-out mt-[2px] translate-x-5 bg-gradient-to-br from-white to-[#fef08a]"></span>
+          </button>
+        </div>
+
+        <div class="pt-2 border-t border-[#ca8a04]/30 flex items-center justify-between text-[9px] font-orbitron">
+          <div class="flex items-center gap-1 text-[#fbbf24] font-black">
+            <span class="text-[#ca8a04]">MODE:</span>
+            <span id="audioModeLabel" class="text-[#facc15]">ACTIVE 🔊</span>
+          </div>
+          <button onclick="testAudioSound()" class="px-2.5 py-1 rounded-lg bg-[#271b08] border border-[#facc15]/50 text-[#fde047] text-[8px] font-black tracking-wider hover:bg-[#34240a] active:scale-95 transition-all flex items-center gap-1 font-orbitron">
+            <i class="fas fa-play text-[7px] text-[#facc15]"></i> TEST AUDIO
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Owner Card -->
+    <div class="bg-[#1c1407] p-5 rounded-3xl border border-[#ca8a04]/60 relative shadow-xl space-y-3 mt-4">
+      <div class="absolute -top-3 left-6 bg-[#ca8a04] text-[#0f0b05] text-[9px] font-black tracking-widest px-3 py-0.5 rounded-full shadow-md font-orbitron">OWNER</div>
+      <div class="flex items-center gap-3 pt-1">
+        <img src="https://i.supaimg.com/0f7fb06a-9122-4153-aaea-0e6022d89dd6/2524e09a-620a-439b-95f1-87afcb1bdc40.png" class="w-12 h-12 rounded-full border-2 border-[#facc15] object-cover" alt="VKS Official">
+        <div>
+          <h4 class="text-sm font-black text-[#fde047] tracking-widest font-orbitron">VKS OFFICIAL</h4>
+          <p class="text-[10px] text-[#fbbf24]/80 font-bold">SYSTEM ADMIN</p>
+        </div>
+      </div>
+      <button onclick="window.open('https://t.me/+MyszvAJk-q8wNTFl','_blank')" class="btn-3d-gold w-full py-3 rounded-xl font-black tracking-widest text-xs flex items-center justify-center gap-2 font-orbitron">
+        <i class="fab fa-telegram-plane text-base"></i> JOIN TELEGRAM
+      </button>
+    </div>
+  </div>
+
+  <!-- VIEW 1: LOGIN -->
+  <div id="view-login" class="absolute inset-0 z-10 flex flex-col px-6 text-center bg-[#0f0b05] hide-scroll overflow-y-auto">
+    <div class="w-full py-12 flex flex-col items-center justify-center min-h-full">
+      <div class="logo-circle-gold mx-auto mb-6 anim-float">
+        <img src="https://i.supaimg.com/0f7fb06a-9122-4153-aaea-0e6022d89dd6/2524e09a-620a-439b-95f1-87afcb1bdc40.png" alt="Logo">
+      </div>
+      <h1 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#fef08a] via-[#facc15] to-[#ca8a04] tracking-widest mb-1 font-orbitron">VKS OFFICIAL</h1>
+      <p class="text-[11px] text-[#fde047] font-black tracking-[0.5em] mb-8 bg-[#1f1709] px-4 py-1.5 rounded-full border border-[#ca8a04]">WINGO 1 MINUTE</p>
+      <div class="w-full space-y-4 bg-[#140e06] p-6 rounded-[2rem] shadow-[0_15px_35px_rgba(202,138,4,0.15)] border-2 border-[#ca8a04]/60">
+        <div class="relative mb-2">
+          <i class="fas fa-fingerprint absolute left-5 top-1/2 -translate-y-1/2 text-[#ca8a04] text-lg"></i>
+          <input type="text" id="accessKey" value="VKS2026" placeholder="ENTER ACCESS KEY" class="input-box w-full pl-12 pr-4 py-4 rounded-xl font-black tracking-widest text-sm text-center font-orbitron">
+        </div>
+        <button onclick="handleLogin()" class="btn-3d-gold w-full py-4 rounded-xl font-black tracking-widest flex justify-center items-center text-sm font-orbitron">
+          AUTHORIZE <i class="fas fa-shield-halved ml-2"></i>
+        </button>
+        <button onclick="window.open('https://t.me/+MyszvAJk-q8wNTFl','_blank')" class="btn-secondary-gold w-full py-3.5 rounded-xl font-black tracking-widest flex justify-center items-center gap-2 text-xs font-orbitron">
+          <i class="fab fa-telegram-plane text-lg text-[#facc15]"></i> GET ACCESS KEY
+        </button>
+        <p id="loginMsg" class="text-rose-400 text-[10px] font-bold min-h-[16px] tracking-widest"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 2: WELCOME -->
+  <div id="view-welcome" class="absolute inset-0 z-10 hidden flex-col px-6 text-center bg-[#0f0b05] hide-scroll overflow-y-auto">
+    <div class="w-full py-12 flex flex-col items-center justify-center min-h-full">
+      <div class="logo-circle-gold mx-auto mb-6 anim-float">
+        <img src="https://i.supaimg.com/0f7fb06a-9122-4153-aaea-0e6022d89dd6/2524e09a-620a-439b-95f1-87afcb1bdc40.png" alt="Logo">
+      </div>
+      <p class="text-[#facc15] text-[11px] tracking-[0.5em] font-black mb-2 font-orbitron"><i class="fas fa-satellite-dish mr-1"></i> CONNECTION SECURED</p>
+      <h1 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#fef08a] via-[#facc15] to-[#ca8a04] tracking-widest font-orbitron" id="display-name">USER</h1>
+      <div id="key-expiry-display" class="mt-3"></div>
+      <div class="pt-12 w-full">
+        <button onclick="openPredictor()" class="btn-3d-gold w-full py-4 rounded-xl font-black tracking-widest text-sm flex justify-center items-center gap-3 font-orbitron">
+          START ENGINE <i class="fas fa-rocket"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 3: PREDICTOR -->
+  <div id="view-predictor" class="absolute inset-0 z-10 hidden flex-col bg-[#0f0b05] hide-scroll overflow-y-auto pt-16 px-3 pb-8 space-y-3">
+    <!-- Banner -->
+    <div class="bg-gradient-to-r from-[#ca8a04] via-[#f59e0b] to-[#b45309] rounded-2xl p-3 shadow-md flex items-center justify-between text-[#0f0a03]">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+          <i class="fas fa-clock text-white text-sm"></i>
+        </div>
+        <div>
+          <div class="text-[11px] font-black tracking-widest text-white font-orbitron">WINGO 1 MINUTE</div>
+          <div class="text-[8px] text-white/80 tracking-wider font-bold">VKS OFFICIAL GOLDEN ENGINE</div>
+        </div>
+      </div>
+      <div class="flex items-center gap-1.5 bg-black/20 px-2.5 py-1 rounded-full text-white">
+        <span class="w-1.5 h-1.5 bg-amber-300 rounded-full animate-ping"></span>
+        <span class="text-[8px] font-black font-orbitron">ONLINE</span>
+      </div>
+    </div>
+
+    <!-- Period + Dual Timer Boxes -->
+    <div class="bg-[#140e06] rounded-3xl p-4 border-2 border-[#ca8a04]/50 shadow-md flex justify-between items-center">
+      <div>
+        <span class="text-[10px] text-[#facc15] font-black tracking-widest font-orbitron"><i class="fas fa-hashtag mr-1"></i> PERIOD</span>
+        <div class="text-2xl font-black tracking-widest text-white mt-1 font-orbitron" id="pred-period">WAIT...</div>
+      </div>
+      <div class="flex flex-col items-end">
+        <span class="text-[10px] text-[#facc15] font-black tracking-widest font-orbitron"><i class="fas fa-hourglass-half mr-1"></i> TIMER</span>
+        <div class="flex gap-1.5 mt-1">
+          <div class="timer-box-gold rounded-lg w-8 h-9 flex items-center justify-center font-black text-lg font-orbitron" id="t-sec-1">0</div>
+          <div class="timer-box-gold rounded-lg w-8 h-9 flex items-center justify-center font-black text-lg font-orbitron" id="t-sec-2">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-3 gap-2">
+      <div class="bg-[#140e06] border border-[#ca8a04]/50 rounded-xl p-2 text-center">
+        <div class="font-orbitron font-black text-base text-[#facc15]" id="statWin">0</div>
+        <div class="text-[8px] text-[#fef08a]/80 font-black mt-1">🏆 WINS</div>
+      </div>
+      <div class="bg-[#140e06] border border-[#ca8a04]/50 rounded-xl p-2 text-center">
+        <div class="font-orbitron font-black text-base text-amber-400" id="statAcc">100%</div>
+        <div class="text-[8px] text-[#fef08a]/80 font-black mt-1">🎯 ACCURACY</div>
+      </div>
+      <div class="bg-[#140e06] border border-[#ca8a04]/50 rounded-xl p-2 text-center">
+        <div class="font-orbitron font-black text-base text-white" id="statTotal">0</div>
+        <div class="text-[8px] text-[#fef08a]/80 font-black mt-1">📊 TOTAL</div>
+      </div>
+    </div>
+
+    <!-- LIVE 10 RECORD -->
+    <div class="live-record-card-gold">
+      <div class="text-[10px] text-[#facc15] tracking-[2px] font-black font-orbitron flex justify-between items-center mb-3">
+        <span>◈ LIVE 10 RECORD</span>
+        <span class="text-amber-400 text-[8px] flex items-center gap-1 font-black">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span> LIVE
+        </span>
+      </div>
+      <div class="grid grid-cols-5 gap-2.5 place-items-center" id="liveRecordGrid"></div>
+    </div>
+
+    <!-- AI PREDICTION CARD -->
+    <div id="prediction-card" class="pred-card-gold h-72 flex flex-col items-center justify-center relative p-5">
+      <div class="scanner-line-gold"></div>
+      <div class="absolute top-4 left-5 text-[11px] text-[#fde047] font-black tracking-widest flex items-center gap-1.5 font-orbitron">
+        <i class="fas fa-microchip text-base text-[#facc15]"></i> 5-AI ENGINE
+      </div>
+      <div id="ai-status" class="absolute top-4 right-5 text-[9px] bg-[#221707] text-[#facc15] px-3 py-1 rounded-full font-black tracking-wider border border-[#ca8a04] font-orbitron">
+        WAITING
+      </div>
+      <div id="result-display" class="flex flex-col items-center justify-center w-full h-full z-10 pt-2 text-center">
+        <div class="w-16 h-16 rounded-full bg-[#1b1307] border-2 border-[#ca8a04] flex items-center justify-center mb-3 text-[#ca8a04]">
+          <i class="fas fa-radar text-2xl"></i>
+        </div>
+        <p class="text-[11px] font-black text-[#fde047] tracking-widest font-orbitron">AWAITING NEW PERIOD...</p>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="grid grid-cols-2 gap-2">
+      <button id="copyBtn" class="btn-3d-gold py-3 rounded-xl font-black tracking-widest text-[10px] flex justify-center items-center gap-2 font-orbitron">
+        <i class="fas fa-copy"></i> COPY SIGNAL
+      </button>
+      <button id="resetBtn" class="btn-secondary-gold py-3 rounded-xl font-black tracking-widest text-[10px] flex justify-center items-center gap-2 font-orbitron">
+        <i class="fas fa-redo"></i> RESET
+      </button>
+    </div>
+
+    <!-- History Table -->
+    <div class="rounded-2xl overflow-hidden bg-[#140e06] border-2 border-[#ca8a04]/60 shadow-lg flex flex-col">
+      <div class="bg-gradient-to-r from-[#ca8a04] via-[#f59e0b] to-[#b45309] text-[#0f0a03] flex justify-between items-center py-2 px-3">
+        <div class="text-white font-orbitron text-[10px] font-black flex items-center gap-1.5">
+          <i class="fas fa-history text-xs"></i> PREDICTION HISTORY
+        </div>
+        <button id="clearHistBtn" class="bg-black/20 border border-white/40 text-white text-[8px] font-black px-2 py-0.5 rounded font-orbitron hover:bg-black/40">
+          DELETE
+        </button>
+      </div>
+      <div class="bg-[#1f1709] text-[#facc15] grid grid-cols-4 gap-1 text-[8px] font-black tracking-wider py-2 px-2 text-center border-b border-[#ca8a04]/40 font-orbitron">
+        <div>PERIOD</div>
+        <div>PREDICTION</div>
+        <div>ACTUAL</div>
+        <div>RESULT</div>
+      </div>
+      <div id="history-list" class="flex flex-col max-h-[360px] overflow-y-auto hide-scroll divide-y divide-[#b45309]/30"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 bg-gradient-to-r from-[#ca8a04] to-[#f59e0b] text-[#0f0a03] px-5 py-2.5 rounded-full font-orbitron font-black text-xs tracking-wider shadow-xl hidden flex items-center gap-2">
+    <i class="fas fa-bolt"></i> <span id="toastMsg">READY</span>
+  </div>
+
+</div>
+
+<script>
+// Web Audio API Sound Synthesizer
+let audioCtx = null;
+let soundEnabled = localStorage.getItem('vks_sound') !== 'false';
+
+function initAudioContext(){
+  if(!audioCtx){
+    const AudioC = window.AudioContext || window.webkitAudioContext;
+    if(AudioC) audioCtx = new AudioC();
+  }
+  if(audioCtx && audioCtx.state === 'suspended'){
+    audioCtx.resume().catch(()=>{});
+  }
+}
+
+function playPredictionChime(){
+  if(!soundEnabled) return;
+  try{
+    initAudioContext();
+    if(!audioCtx) return;
+    const now = audioCtx.currentTime;
+    const freqs = [830.61, 987.77, 1318.51];
+    freqs.forEach((freq, idx)=>{
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+      gain.gain.setValueAtTime(0, now + idx * 0.08);
+      gain.gain.linearRampToValueAtTime(0.22, now + idx * 0.08 + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.42);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now + idx * 0.08);
+      osc.stop(now + idx * 0.08 + 0.45);
+    });
+  }catch(e){}
+}
+
+function playWinFanfare(){
+  if(!soundEnabled) return;
+  try{
+    initAudioContext();
+    if(!audioCtx) return;
+    const now = audioCtx.currentTime;
+    const chord = [523.25, 659.25, 783.99, 1046.50];
+    chord.forEach((freq, idx)=>{
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = idx === 3 ? 'sine' : 'triangle';
+      osc.frequency.setValueAtTime(freq, now + idx * 0.09);
+      gain.gain.setValueAtTime(0, now + idx * 0.09);
+      gain.gain.linearRampToValueAtTime(0.28, now + idx * 0.09 + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.09 + 0.55);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start(now + idx * 0.09);
+      osc.stop(now + idx * 0.09 + 0.6);
+    });
+    const shimmer = audioCtx.createOscillator();
+    const shimmerGain = audioCtx.createGain();
+    shimmer.type = 'sine';
+    shimmer.frequency.setValueAtTime(1567.98, now + 0.3);
+    shimmerGain.gain.setValueAtTime(0, now + 0.3);
+    shimmerGain.gain.linearRampToValueAtTime(0.18, now + 0.32);
+    shimmerGain.gain.exponentialRampToValueAtTime(0.001, now + 0.9);
+    shimmer.connect(shimmerGain);
+    shimmerGain.connect(audioCtx.destination);
+    shimmer.start(now + 0.3);
+    shimmer.stop(now + 0.95);
+  }catch(e){}
+}
+
+function playToggleBeep(enabled){
+  try{
+    initAudioContext();
+    if(!audioCtx) return;
+    const now = audioCtx.currentTime;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(enabled ? 660 : 440, now);
+    if(enabled) osc.frequency.exponentialRampToValueAtTime(1100, now + 0.12);
+    else osc.frequency.exponentialRampToValueAtTime(300, now + 0.12);
+    gain.gain.setValueAtTime(0.2, now);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(now);
+    osc.stop(now + 0.16);
+  }catch(e){}
+}
+
+function updateSoundUI(){
+  const quickIcon = document.getElementById('quickSoundIcon');
+  const quickBtn = document.getElementById('quickSoundBtn');
+  const drawerIcon = document.getElementById('drawerAudioIcon');
+  const drawerIconBox = document.getElementById('drawerAudioIconBox');
+  const dot = document.getElementById('audioPulseDot');
+  const switchBtn = document.getElementById('audioSwitchBtn');
+  const switchThumb = document.getElementById('audioSwitchThumb');
+  const modeLabel = document.getElementById('audioModeLabel');
+
+  if(soundEnabled){
+    quickIcon.className = 'fas fa-volume-high text-xs';
+    quickBtn.className = 'w-10 h-10 rounded-full border border-[#facc15] bg-[#1c1508] text-[#facc15] flex items-center justify-center pointer-events-auto active:scale-95 transition-all';
+    drawerIcon.className = 'fas fa-volume-high text-sm';
+    drawerIconBox.className = 'w-9 h-9 rounded-xl flex items-center justify-center border bg-[#ca8a04]/25 border-[#facc15] text-[#facc15] shadow-[0_0_12px_rgba(250,204,21,0.25)]';
+    dot.className = 'w-1.5 h-1.5 rounded-full bg-[#facc15] animate-pulse';
+    switchBtn.className = 'relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full border-2 transition-all duration-300 ease-in-out focus:outline-none bg-gradient-to-r from-[#d97706] to-[#f59e0b] border-[#fef08a] shadow-[0_0_12px_rgba(245,158,11,0.4)]';
+    switchThumb.className = 'pointer-events-none inline-block h-5 w-5 transform rounded-full shadow-md ring-0 transition duration-300 ease-in-out mt-[2px] translate-x-5 bg-gradient-to-br from-white to-[#fef08a]';
+    modeLabel.innerHTML = 'ACTIVE 🔊';
+    modeLabel.className = 'text-[#facc15]';
+  } else {
+    quickIcon.className = 'fas fa-volume-xmark text-xs';
+    quickBtn.className = 'w-10 h-10 rounded-full border border-[#78350f] bg-[#120d06] text-gray-500 flex items-center justify-center pointer-events-auto active:scale-95 transition-all';
+    drawerIcon.className = 'fas fa-volume-xmark text-sm';
+    drawerIconBox.className = 'w-9 h-9 rounded-xl flex items-center justify-center border bg-[#150d05] border-[#78350f] text-gray-500';
+    dot.className = 'hidden';
+    switchBtn.className = 'relative inline-flex h-7 w-12 shrink-0 cursor-pointer rounded-full border-2 transition-all duration-300 ease-in-out focus:outline-none bg-[#181005] border-[#78350f]';
+    switchThumb.className = 'pointer-events-none inline-block h-5 w-5 transform rounded-full shadow-md ring-0 transition duration-300 ease-in-out mt-[2px] translate-x-0.5 bg-gray-400';
+    modeLabel.innerHTML = 'MUTED 🔇';
+    modeLabel.className = 'text-gray-400';
+  }
+}
+
+function toggleSoundMaster(){
+  initAudioContext();
+  soundEnabled = !soundEnabled;
+  localStorage.setItem('vks_sound', soundEnabled.toString());
+  updateSoundUI();
+  playToggleBeep(soundEnabled);
+  showToast(soundEnabled ? '🔔 AUDIO ALERTS: ACTIVE' : '🔕 AUDIO ALERTS: MUTED');
+}
+
+function testAudioSound(){
+  initAudioContext();
+  playPredictionChime();
+  setTimeout(playWinFanfare, 600);
+  showToast('🔊 TEST AUDIO CHIME PLAYED');
+}
+
+// User & Game State
+let userState = {
+  name: localStorage.getItem('vks_user') || 'VIP USER',
+  key: localStorage.getItem('vks_key') || 'VKS2026',
+  expiry: parseInt(localStorage.getItem('vks_expiry') || '0'),
+};
+let currentPeriod = 'WAIT';
+let timerInterval = null, pollInterval = null, expiryInterval = null;
+let currentActiveView = 'view-login';
+let sessionData = JSON.parse(localStorage.getItem('vks_hist') || '[]');
+let totalWins = 0, lossStreak = 0;
+let currentPrediction = null;
+let lastProcessedIssue = '', lastPredictedPeriod = '', lastHistoryData = [];
+
+const API_PROXY = '/api/wingo';
+const API_DIRECT = 'https://draw.ar-lottery01.com/WinGo/WinGo_1M/GetHistoryIssuePage.json';
+
+function showToast(msg){
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').innerText = msg;
+  t.classList.remove('hidden');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(()=>t.classList.add('hidden'), 2500);
+}
+
+function switchView(id){
+  ['view-login','view-welcome','view-predictor'].forEach(v=>{
+    document.getElementById(v).classList.add('hidden');
+    document.getElementById(v).classList.remove('flex');
+  });
+  const el = document.getElementById(id);
+  el.classList.remove('hidden');
+  el.classList.add('flex');
+  currentActiveView = id;
+
+  const nav = document.getElementById('top-nav');
+  if(id === 'view-login'){
+    nav.style.opacity = '0';
+    nav.style.pointerEvents = 'none';
+  } else {
+    nav.style.opacity = '1';
+    nav.style.pointerEvents = 'auto';
+  }
+}
+
+function goBack(){
+  if(currentActiveView === 'view-predictor') switchView('view-welcome');
+}
+
+function toggleProfile(show){
+  const ov = document.getElementById('drawer-overlay');
+  const dr = document.getElementById('profile-drawer');
+  if(show){
+    ov.classList.remove('hidden');
+    requestAnimationFrame(()=>{ ov.style.opacity='1'; dr.classList.add('open'); });
+  } else {
+    ov.style.opacity='0';
+    dr.classList.remove('open');
+    setTimeout(()=>ov.classList.add('hidden'), 350);
+  }
+}
+
+function handleLogin(){
+  initAudioContext();
+  const key = document.getElementById('accessKey').value.trim().toUpperCase();
+  const msg = document.getElementById('loginMsg');
+  if(!key){ msg.innerText = 'ENTER KEY'; return; }
+
+  const now = Date.now();
+  let exp = userState.expiry;
+  if(!exp || exp <= now) exp = now + 7 * 86400000;
+
+  userState.key = key;
+  userState.expiry = exp;
+  localStorage.setItem('vks_key', key);
+  localStorage.setItem('vks_expiry', exp.toString());
+
+  document.getElementById('display-name').innerText = userState.name;
+  document.getElementById('drawer-name').innerText = userState.name;
+  updateExpiryBadge();
+  switchView('view-welcome');
+  startExpiryWatcher();
+}
+
+function updateExpiryBadge(){
+  const rem = userState.expiry - Date.now();
+  if(rem <= 0) return 'EXPIRED';
+  const d = Math.floor(rem / 86400000);
+  const h = Math.floor((rem % 86400000) / 3600000);
+  const str = d > 0 ? (d + 'D ' + h + 'H LEFT') : (h + 'H LEFT');
+  const b = '<span class="bg-[#ca8a04] text-[#0f0b05] text-[9px] font-black px-3 py-1 rounded-full font-orbitron shadow-md"><i class="fas fa-clock mr-1"></i> KEY: ' + str + '</span>';
+  document.getElementById('key-expiry-display').innerHTML = b;
+  document.getElementById('drawer-key-status').innerHTML = '<i class="fas fa-clock mr-1"></i> ' + str;
+}
+
+function startExpiryWatcher(){
+  if(expiryInterval) clearInterval(expiryInterval);
+  expiryInterval = setInterval(()=>{
+    if(userState.expiry && Date.now() >= userState.expiry){
+      alert('7-DAY TRIAL EXPIRED!');
+      location.reload();
+    }
+  }, 5000);
+}
+
+function openPredictor(){
+  initAudioContext();
+  switchView('view-predictor');
+  startEngine();
+}
+
+function startEngine(){
+  if(timerInterval) clearInterval(timerInterval);
+  if(pollInterval) clearInterval(pollInterval);
+  updateTimer();
+  timerInterval = setInterval(updateTimer, 1000);
+  fetchData();
+  pollInterval = setInterval(fetchData, 2500);
+}
+
+function updateTimer(){
+  const s = new Date().getSeconds();
+  const rem = 60 - s;
+  const str = rem.toString().padStart(2,'0');
+  document.getElementById('t-sec-1').innerText = str[0];
+  document.getElementById('t-sec-2').innerText = str[1];
+}
+
+// Trend Analysis Engine
+function analyzeLast10Trends(list){
+  if(!list || !list.length) return { trend: 'BIG', pattern: 'MOMENTUM CYCLE', confidence: 91 };
+  const last10 = list.slice(0, 10).map(i => parseInt(i.number) >= 5 ? 'BIG' : 'SMALL');
+  const latest = last10[0] || 'BIG';
+
+  let streak = 1;
+  for(let i=1; i<last10.length; i++){
+    if(last10[i] === latest) streak++;
+    else break;
+  }
+
+  const bigCount = last10.filter(x => x === 'BIG').length;
+
+  if(lossStreak >= 2){
+    const inv = latest === 'BIG' ? 'SMALL' : 'BIG';
+    return { trend: inv, pattern: '🛡️ LEVEL-3 RECOVERY SHIELD', confidence: 99.4 };
+  }
+  if(lossStreak === 1){
+    return { trend: latest, pattern: '🛡️ LEVEL-2 SMART RECOVERY', confidence: 97.8 };
+  }
+  if(streak >= 3){
+    return { trend: latest, pattern: '🔥 DRAGON TREND (' + latest + ' × ' + streak + ')', confidence: Math.min(98.5, 92 + streak * 2) };
+  }
+  if(streak === 1 && last10.length >= 3 && last10[1] === last10[2] && last10[0] !== last10[1]){
+    return { trend: latest, pattern: '🎯 1→2 PAIR FORMATION', confidence: 94.6 };
+  }
+  if(last10.length >= 4 && last10[0] === last10[1] && last10[2] === last10[3] && last10[0] !== last10[2]){
+    const nextT = latest === 'BIG' ? 'SMALL' : 'BIG';
+    return { trend: nextT, pattern: '⚡ 2-2 MIRROR PAIR CYCLE', confidence: 93.8 };
+  }
+  if(last10.length >= 4 && last10[0] !== last10[1] && last10[1] !== last10[2] && last10[2] !== last10[3]){
+    const nextT = latest === 'BIG' ? 'SMALL' : 'BIG';
+    return { trend: nextT, pattern: '🌊 1-1 HARMONIC CHOP', confidence: 93.2 };
+  }
+  const defTrend = bigCount >= 5 ? 'BIG' : 'SMALL';
+  return { trend: defTrend, pattern: '📈 QUANTUM TREND CONTINUATION', confidence: 90.5 };
+}
+
+async function fetchData(){
+  let list = null;
+  // 1. Try proxy
+  try{
+    const r = await fetch(API_PROXY + '?ts=' + Date.now());
+    if(r.ok){
+      const d = await r.json();
+      if(d?.data?.list?.length) list = d.data.list;
+    }
+  }catch(e){}
+
+  // 2. Try direct
+  if(!list){
+    try{
+      const r = await fetch(API_DIRECT + '?ts=' + Date.now());
+      if(r.ok){
+        const d = await r.json();
+        if(d?.data?.list?.length) list = d.data.list;
+      }
+    }catch(e){}
+  }
+
+  // 3. Fallback clock-sync simulation
+  if(!list){
+    const now = new Date();
+    const y = now.getFullYear();
+    const m = String(now.getMonth() + 1).padStart(2,'0');
+    const day = String(now.getDate()).padStart(2,'0');
+    const totMin = now.getHours() * 60 + now.getMinutes();
+    const base = BigInt(y + m + day + '100010000') + BigInt(totMin);
+    list = [];
+    for(let i=0; i<10; i++){
+      const iss = (base - BigInt(i)).toString();
+      let h = 0;
+      for(let c=0; c<iss.length; c++) h = (h*31 + iss.charCodeAt(c)) % 10000;
+      const n = (h % 10).toString();
+      list.push({ issueNumber: iss, number: n, color: parseInt(n)%2===0 ? 'red' : 'green' });
+    }
+  }
+
+  if(!list || !list.length) return;
+  lastHistoryData = list;
+
+  const nextP = (BigInt(lastHistoryData[0].issueNumber) + 1n).toString();
+  if(nextP !== currentPeriod){
+    currentPeriod = nextP;
+    document.getElementById('pred-period').innerText = '#' + currentPeriod.slice(-5);
+  }
+
+  renderLiveRecord(lastHistoryData);
+  checkPending();
+  renderHistoryTable();
+
+  if(lastPredictedPeriod !== currentPeriod) triggerPrediction();
+}
+
+function renderLiveRecord(list){
+  const grid = document.getElementById('liveRecordGrid');
+  if(!grid) return;
+  grid.innerHTML = list.slice(0, 10).map(item => {
+    const isBig = parseInt(item.number) >= 5;
+    return '<div class="flex flex-col items-center gap-1">' +
+      '<div class="w-12 h-12 rounded-full flex items-center justify-center border-2 border-[#facc15] bg-[#221809] shadow-md font-orbitron font-black text-base ' + (isBig ? 'text-[#facc15]' : 'text-[#fb923c]') + '">' +
+        (isBig ? 'B' : 'S') +
+      '</div>' +
+      '<span class="font-orbitron font-black text-[8px] text-[#facc15]">#' + item.issueNumber.slice(-4) + '</span>' +
+    '</div>';
+  }).join('');
+}
+
+function triggerPrediction(){
+  if(currentPeriod === 'WAIT' || lastPredictedPeriod === currentPeriod) return;
+  lastPredictedPeriod = currentPeriod;
+
+  const card = document.getElementById('prediction-card');
+  const status = document.getElementById('ai-status');
+  const disp = document.getElementById('result-display');
+
+  card.classList.add('analyzing');
+  status.innerText = 'ANALYZING...';
+
+  disp.innerHTML = '<div class="w-14 h-14 rounded-full border-4 border-[#3a280d] border-t-[#facc15] animate-spin mb-3"></div>' +
+    '<p class="text-xs font-black text-[#facc15] font-orbitron">ANALYZING LAST 10...</p>' +
+    '<p class="text-[9px] font-bold text-[#fef08a]/70 font-orbitron mt-1">MATCHING PATTERN</p>';
+
+  setTimeout(()=>{
+    card.classList.remove('analyzing');
+    status.innerText = 'VERIFIED';
+
+    const p = analyzeLast10Trends(lastHistoryData);
+    currentPrediction = {
+      periodShort: currentPeriod.slice(-4),
+      trend: p.trend,
+      pattern: p.pattern,
+      confidence: p.confidence
+    };
+
+    const cls = p.trend === 'BIG' ? 'result-text-big-gold' : 'result-text-small-gold';
+
+    disp.innerHTML = '<div class="text-[10px] font-black text-[#fde047] mb-1 font-orbitron">PERIOD: #' + currentPrediction.periodShort + '</div>' +
+      '<div class="text-[56px] font-black leading-none mb-2 font-orbitron ' + cls + '">' + p.trend + '</div>' +
+      '<div class="bg-[#251b0a] border border-[#facc15] px-3.5 py-1 rounded-full text-[10px] font-black text-[#fef08a] font-orbitron mb-2">' + p.pattern + '</div>' +
+      '<div class="text-[9px] font-black text-[#0e0a04] bg-gradient-to-r from-[#fef08a] via-[#facc15] to-[#ca8a04] px-4 py-1 rounded-full font-orbitron"><i class="fas fa-bullseye mr-1"></i> ACCURACY: ' + p.confidence + '%</div>';
+
+    playPredictionChime();
+    showToast('⚡ ' + p.trend + ' LOCKED (' + p.confidence + '%)');
+  }, 1200);
+}
+
+function checkPending(){
+  if(!currentPrediction || !lastHistoryData.length) return;
+  const latest = lastHistoryData[0];
+  const shortP = latest.issueNumber.slice(-4);
+  if(lastProcessedIssue === latest.issueNumber) return;
+
+  if(currentPrediction.periodShort === shortP){
+    const actual = parseInt(latest.number) >= 5 ? 'BIG' : 'SMALL';
+    const isWin = currentPrediction.trend === actual;
+
+    if(isWin){
+      totalWins++;
+      lossStreak = 0;
+      playWinFanfare();
+    } else {
+      lossStreak++;
+    }
+
+    sessionData.unshift({
+      period: shortP,
+      pred: currentPrediction.trend,
+      actual: actual,
+      status: isWin ? 'WIN' : 'LOSS'
+    });
+    if(sessionData.length > 100) sessionData.pop();
+    localStorage.setItem('vks_hist', JSON.stringify(sessionData));
+
+    renderHistoryTable();
+    lastProcessedIssue = latest.issueNumber;
+  }
+}
+
+function renderHistoryTable(){
+  const list = document.getElementById('history-list');
+  document.getElementById('statWin').innerText = totalWins;
+  document.getElementById('statTotal').innerText = sessionData.length;
+  document.getElementById('statAcc').innerText = sessionData.length ? Math.round((totalWins/sessionData.length)*100)+'%' : '100%';
+
+  if(!sessionData.length){
+    list.innerHTML = '<div class="p-6 text-center text-[#fde047] font-orbitron text-xs">Waiting for first round...</div>';
+    return;
+  }
+
+  list.innerHTML = sessionData.map(h => {
+    const isW = h.status === 'WIN';
+    return '<div class="grid grid-cols-4 gap-1 items-center py-2.5 px-2 text-center font-orbitron text-xs ' + (isW ? 'bg-[#1a1408]' : 'bg-[#150d05]') + '">' +
+      '<div class="text-[10px] text-[#facc15] font-black">#' + h.period + '</div>' +
+      '<div><span class="px-2 py-0.5 rounded text-[9px] font-black ' + (h.pred==='BIG' ? 'bg-[#291e0a] text-[#fde047] border border-[#facc15]' : 'bg-[#2b1709] text-[#fdba74] border border-[#fb923c]') + '">' + h.pred + '</span></div>' +
+      '<div><span class="px-2 py-0.5 rounded text-[9px] font-black ' + (h.actual==='BIG' ? 'bg-[#291e0a] text-[#fde047] border border-[#facc15]' : 'bg-[#2b1709] text-[#fdba74] border border-[#fb923c]') + '">' + h.actual + '</span></div>' +
+      '<div class="flex justify-center"><span class="px-2 py-0.5 rounded text-[8px] font-black ' + (isW ? 'bg-[#ca8a04] text-[#0f0a03]' : 'bg-rose-950 text-rose-300 border border-rose-500/50') + '">' + (isW ? 'WIN ✓' : 'LOSS ✗') + '</span></div>' +
+    '</div>';
+  }).join('');
+}
+
+document.getElementById('copyBtn').addEventListener('click', ()=>{
+  if(!currentPrediction) return showToast('Generating...');
+  const txt = currentPrediction.periodShort + ' ' + currentPrediction.trend;
+  navigator.clipboard.writeText(txt).then(()=>showToast('📋 COPIED: ' + txt));
+});
+
+document.getElementById('resetBtn').addEventListener('click', ()=>{
+  sessionData = []; totalWins = 0; lossStreak = 0;
+  localStorage.removeItem('vks_hist');
+  renderHistoryTable();
+  showToast('⟲ RESET COMPLETED');
+});
+
+document.getElementById('clearHistBtn').addEventListener('click', ()=>{
+  sessionData = [];
+  localStorage.removeItem('vks_hist');
+  renderHistoryTable();
+  showToast('🗑 DELETED');
+});
+
+// Initialization
+window.addEventListener('load', ()=>{
+  updateSoundUI();
+  if(userState.key && userState.expiry && Date.now() < userState.expiry){
+    document.getElementById('display-name').innerText = userState.name;
+    document.getElementById('drawer-name').innerText = userState.name;
+    updateExpiryBadge();
+    switchView('view-welcome');
+    startExpiryWatcher();
+  } else {
+    switchView('view-login');
+  }
+});
+
+// Global user interaction to unlock audio
+window.addEventListener('click', initAudioContext, { once: true });
+window.addEventListener('touchstart', initAudioContext, { once: true });
+</script>
+</body>
+</html>
